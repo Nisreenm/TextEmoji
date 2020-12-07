@@ -2,7 +2,7 @@
 
 let mytxt = document.querySelector('p');
 mytxt.innerHTML = mytxt.innerText.split(' ').map(word =>
-     (word.length > 8) ? word.innerHTML = `<mark>${word}</mark>` : word ).join(' ')
+     (word.length > 8) ? word.innerHTML = `<mark style='background:yellow'>${word}</mark>` : word ).join(' ')
 
 // Task 02 
 
