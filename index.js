@@ -1,8 +1,9 @@
 // Task 01:
-
 let mytxt = document.querySelector('p');
+function highligting () {
 mytxt.innerHTML = mytxt.innerText.split(' ').map(word =>
-     (word.length > 8) ? word.innerHTML = `<mark style='background:yellow'>${word}</mark>` : word ).join(' ')
+     (word.length > 8) ? word.innerHTML = `<mark>${word}</mark>` : word ).join(' ')
+}
 
 // Task 02 
 
@@ -23,15 +24,15 @@ document.body.insertBefore(count, mytxt);
 mytxt.innerHTML = mytxt.textContent.replaceAll('?','🤔').replaceAll("!", '😲')
 
 
-/* Task 04 
- OR:
-let str='';
-Array.from(mytxt.textContent).forEach(letter => {
- letter === '?' ? letter = '🤔' :  (letter === '!' ? letter = '😲' : letter ) ;
- str += letter
- mytxt.textContent = str;
-})
- */
+// Task 04 
+//  OR:
+//  let str='';
+// Array.from(mytxt.textContent).forEach(letter => {
+//  letter === '?' ? letter = '🤔' :  (letter === '!' ? letter = '😲' : letter ) ;
+//  str += letter
+//  mytxt.innerHTML = str;
+// })
+highligting ();
  
 
 
